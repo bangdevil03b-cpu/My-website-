@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keluarga Saya</title>
+    <link rel="stylesheet" href="CSS/Contoh.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">Keluarga Saya</div>
+            <div class="logo">desain santos</div>
+            <ul>
+                <li><a href="#family">Anggota Keluarga</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Selamat Datang di Website Keluarga Kami</h1>
+            <p>Kenali setiap anggota keluarga kami melalui foto dan informasi mereka!</p>
+        </div>
+        <aside class="sidebar">
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</aside>
+    </section>
+    <!-- Anggota Keluarga -->
+    <section id="family" class="family">
+        <h2>Anggota Keluarga</h2>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="gambar/gambar_2.jpg" alt="Bapak" class="family-photo">
+                <h3>ANTON DEMON</h3>
+                <div class="info">
+                    <p><strong>Identitas:</strong> Ayah kepala keluarga, bekerja sebagai petani.</p>
+                    <p><strong>Hobi:</strong>, berkebun.</p>
+                </div>
+            </div>
+            <div class="grid-item">
+            <img src="gambar/gambar_3.jpg" alt="Mama" class="family-photo">
+            <h3>MAGDALENA BAREKk</h3>
+            <div class="info">
+                <p><strong>Identitas:</strong> Ibu rumah tangga yang penuh kasih sayang.</p>
+                <p><strong>Hobi:</strong> Memasak, berkebun.</p>
+            </div>
+        </div>
+            <div class="grid-item">
+                <img src="gambar/gambar_7.jpg" alt="Anak 1" class="family-photo">
+                <h3>KEROWEANUS LAKUN</h3>
+                <div class="info">
+                    <p><strong>Identitas:</strong> Berusia 39 tahun, suka bersosialisasi.</p>
+                    <p><strong>Hobi:</strong> Membaca, bermain gitar.</p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="gambar/gambar_4.jpg" alt="Anak 2" class="family-photo">
+                <h3>LOSTA LAKUN</h3>
+                <div class="info">
+                    <p><strong>Identitas:</strong> Berusia 35 tahun, suka bermain bola.</p>
+                    <p><strong>Hobi:</strong> Bermain bola, bersepeda.</p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="gambar/gambar_5.jpg" alt="Anak 3" class="family-photo">
+                <h3>ENGKIS LAKUN</h3>
+                <div class="info">
+                    <p><strong>Identitas:</strong> Berusia 30 tahun, suka menggambar.</p>
+                    <p><strong>Hobi:</strong> Menggambar, melukis.</p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="gambar/gambar_1.jpg" alt="Anak 4" class="family-photo">
+                <h3>STEFANUS OLA LAKUN</h3>
+                <div class="info">
+                    <p><strong>Identitas:</strong> Berusia 22 tahun, ceria dan penuh energi.</p>
+                    <p><strong>Hobi:</strong> Bermain dengan teman-teman, menggambar,belajar IT.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Keluarga Saya. Semua hak cipta dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+
+<script>
+  // Menambahkan interaktivitas ketika gambar anggota keluarga diklik
+const familyItems = document.querySelectorAll('.grid-item');
+
+familyItems.forEach(item => {
+    item.addEventListener('click', () => {
+        const info = item.querySelector('.info');
+        // Toggle informasi anggota keluarga
+        info.style.display = (info.style.display === 'block') ? 'none' : 'block';
+    });
+});
+
+</script>
+</html>
